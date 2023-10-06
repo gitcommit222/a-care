@@ -1,0 +1,352 @@
+@import url("https://fonts.googleapis.com/css2?family=Poller+One&family=Poppins:ital,wght@0,300;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+nav {
+  height: 120px;
+  padding: 20px 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    180deg,
+    rgba(34, 166, 153, 0.44) 0%,
+    rgba(255, 255, 255, 0) 49.78%
+  );
+}
+
+nav .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav .left h1 {
+  font-family: "Poller One", cursive;
+}
+
+nav .logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+nav .logo img {
+  width: 80px;
+  height: 80px;
+}
+
+nav .nav-links {
+  height: 100%;
+  width: 50%;
+}
+
+nav .nav-links ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+nav .nav-links ul li {
+  list-style-type: none;
+}
+
+nav .nav-links ul li a {
+  text-decoration: none;
+  color: black;
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.95px;
+  position: relative;
+}
+
+nav .nav-links > ul > li > a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  background-color: #22a699;
+  height: 2px;
+  transform: scaleX(0);
+  transition: all 0.3s ease;
+}
+
+nav .nav-links > ul > li > a:not(.login):hover::after {
+  transform: scaleX(1);
+}
+
+nav .nav-links ul li .login {
+  background: #22a699;
+  padding: 8px 20px;
+  color: #fff;
+  border-radius: 3px;
+}
+
+nav .nav-links ul li .login:hover {
+  opacity: 80%;
+}
+
+main section {
+  padding: 20px 90px;
+  height: 100vh;
+}
+
+main section:not(#hero) {
+  margin-bottom: 150px;
+}
+
+main #hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+main section .left,
+main section .right {
+  width: 50%;
+  height: 600px;
+}
+
+main section .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main section .left > h1 {
+  font-family: "Poller One", cursive;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 1.5px;
+}
+
+main section .left > h1 > span {
+  color: #22a699;
+}
+
+main section .left > a {
+  width: 176.663px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background: #22a699;
+  font-family: "Poller One", cursive;
+  margin-top: 20px;
+  border-radius: 3px;
+  letter-spacing: 1px;
+}
+
+main #hero .right img {
+  width: 700px;
+}
+
+main section > h1 {
+  font-family: "Poller One";
+  font-weight: 600;
+  letter-spacing: 1px;
+  position: relative;
+  font-size: 40px;
+  text-align: center;
+}
+
+main section > h1::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #22a699;
+  width: 10%;
+  height: 3px;
+  bottom: -4px;
+  border-radius: 5px;
+}
+
+main section .page-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+main section .page-content .left,
+main section .page-content .right,
+main section .page-content .center {
+  margin-top: 110px;
+}
+
+main section .page-content .right {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+  padding: 10px;
+}
+
+main section .page-content .right p {
+  font-family: "Poppins";
+  text-align: justify;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+main section .page-content .right p > span {
+  font-weight: 700;
+}
+
+main section .page-content .right > a {
+  width: 176.663px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background: #22a699;
+  font-family: "Poller One", cursive;
+  margin-top: 20px;
+  border-radius: 3px;
+  letter-spacing: 1px;
+}
+
+main section .page-content .center {
+  width: 100%;
+  height: 600px;
+  background: #e9e9e9;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px 30px;
+}
+
+section .page-content .center .form-control {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+section .page-content .center .form-control label {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+#contact-page .page-content .center .form-control input[type="text"],
+#contact-page .page-content .center .form-control input[type="email"],
+#contact-page .page-content .center .form-control textarea {
+  height: 50px;
+  padding: 10px 36px 10px 16px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+#contact-page .page-content .center .form-control textarea {
+  height: 200px;
+}
+
+#contact-page .page-content .center button {
+  width: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: #fff;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+  background-color: #22a699;
+  font-family: "Poppins";
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#services-page .page-content .center .forms {
+  display: flex;
+  gap: 20px;
+}
+
+#services-page .page-content .center .buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+#services-page .page-content .center .buttons .submit {
+  height: 40px;
+  width: 300px;
+  font-family: "Poppins";
+  background-color: #22a699;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#services-page .page-content .center h2 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.4px;
+}
+
+#services-page .page-content .center .form-left,
+#services-page .page-content .center .form-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+#services-page .page-content .center .form-left .small-inputs {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#services-page .page-content .center .form-control input[type="text"],
+#services-page .page-content .center .form-control input[type="email"],
+#services-page .page-content .center .form-control input[type="number"],
+#services-page .page-content .center .form-control input[type="date"],
+#services-page .page-content .center .form-control select {
+  height: 50px;
+  padding: 10px 36px 10px 16px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.small-inputs .form-control input[type="number"],
+.small-inputs .form-control select {
+  height: 50px;
+  width: 300px;
+  padding: 10px 36px 10px 16px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.1);
+}
